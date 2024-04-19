@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Events Page</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <form class="header-search">
+                <a href="./index.html"><img class="logotip" src="./image/logo.svg"></a>
+                <div class="search-area">
+                    <div class="search_events">
+                        <div class="search-button-left">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 50 50">
+                                <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                                </svg></a>
+                        </div>
+                    
+                        <input type="search" class="search" placeholder="Search events">
+                    </div>
+                    <div class="search_location">
+                        <input type="search" class="search" placeholder="Search location">
+                        <div class="search-button-right">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 50 50">
+                                <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="header-buttons">
+                <div class="switch-english">
+                    <img src="./image/english button.svg">
+                     English</div>
+                 <a href="#" class="btn btn--secondary">Log in</a>
+                 <button class="btn btn--primary">Sign up</button>
+            </div>
+        </div>
+        <div id="search-adapt-version" class="search-area">
+            <div class="search_events">
+                <div class="search-button-left">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 50 50">
+                        <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                        </svg></a>
+                </div>
+                <input type="search" class="search" placeholder="Search events">
+                <div class="search-button-right">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 50 50">
+                    <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                    </svg></a>
+                </div>    
+            </div>
+            
+        </div> 
+    </header>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="block-left event-page-content">
+                  <h2>Events near New York, NY</h1>
+                  <a id="events-page-link"  class="events-link " href="#">Events</a>
+                  <div class="filter">
+                    <select name="type" id="filter-type">
+                        <option value="">Any Type</option>
+                        <option value="online">On-line</option>
+                        <option value="offline">Off-line</option>
+
+                    </select>
+                    <select name="distance" id="filter-distance">
+                        <option value="">Any Distance</option>
+                        <option value="5">5 km</option>
+                        <option value="10">10 km</option>
+                        <option value="15">15 km</option>
+                        <option value="25">25 km</option>
+                        <option value="50">50 km</option>
+                        <option value="74">74 km</option>
+                        <option value="100">100 km</option>
+
+                    </select>
+                    <select name="category" id="filter-category">
+                        <option value="Any Category">Any Category</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Business">Business</option>
+                        <option value="Social Activities">Social Activities</option>
+                        <option value="Health and Wellbeing">Health and Wellbeing</option>
+                        <option value="Hobbies and Passionss">Hobbies and Passions</option>
+                        
+
+                    </select>
+                  </div>
+                  <div class="line"></div>
+                  <div id="list-of-events">
+
+                  </div>
+                </div>
+                <div class="map-area">
+                    <div class="map-text">
+                       <p>Find events near</p>
+                       <h3>New York, NY</h3>
+                    </div>
+                    <div class="map">
+                       <!-- <img src="./image/map/map.jpg" alt=""> -->
+                       <button class="btn">Browse in map <svg width="18" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_5951)">
+                        <g clip-path="url(#clip1_2_5951)">
+                        <mask id="mask0_2_5951" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="18">
+                        <path d="M0.400391 18L18.4004 18L18.4004 0L0.400391 0L0.400391 18Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask0_2_5951)">
+                        <path d="M0.400391 17.2503C0.400391 17.4492 0.479408 17.64 0.620059 17.7806C0.760712 17.9213 0.951478 18.0003 1.15039 18.0003H6.02539C6.1737 18.0003 6.31867 17.9563 6.44198 17.8739C6.56529 17.7914 6.66139 17.6743 6.71815 17.5373C6.7749 17.4003 6.78975 17.2495 6.76083 17.104C6.7319 16.9586 6.6605 16.8249 6.55564 16.72L4.91389 15.0753C4.89643 15.0579 4.88257 15.0372 4.87312 15.0144C4.86367 14.9916 4.8588 14.9672 4.8588 14.9425C4.8588 14.9179 4.86367 14.8935 4.87312 14.8707C4.88257 14.8479 4.89643 14.8272 4.91389 14.8098L8.18839 11.5391C8.36423 11.3632 8.46301 11.1247 8.46301 10.8761C8.46301 10.6274 8.36423 10.3889 8.18839 10.213C8.01255 10.0372 7.77406 9.93848 7.52539 9.93848C7.27672 9.93848 7.03823 10.0372 6.86239 10.213L3.58789 13.4875C3.57047 13.505 3.54978 13.5189 3.527 13.5283C3.50422 13.5378 3.4798 13.5426 3.45514 13.5426C3.43048 13.5426 3.40605 13.5378 3.38328 13.5283C3.3605 13.5189 3.33981 13.505 3.32239 13.4875L1.68064 11.8458C1.61107 11.776 1.52844 11.7206 1.43745 11.6828C1.34647 11.645 1.24893 11.6254 1.15039 11.6253C1.0518 11.625 0.95414 11.6444 0.863141 11.6823C0.726127 11.7391 0.609033 11.8353 0.526665 11.9586C0.444297 12.082 0.400354 12.227 0.400391 12.3753L0.400391 17.2503Z" fill="#00798A"/>
+                        <path d="M17.6505 4.26186e-07L12.7755 0C12.6272 3.14583e-05 12.4822 0.0440349 12.3589 0.126449C12.2356 0.208862 12.1395 0.325985 12.0827 0.463009C12.026 0.600034 12.0111 0.750809 12.0401 0.896273C12.069 1.04174 12.1404 1.17536 12.2453 1.28025L13.887 2.925C13.9044 2.94235 13.9183 2.96298 13.9277 2.9857C13.9372 3.00842 13.942 3.03277 13.942 3.05738C13.942 3.08198 13.9372 3.10634 13.9277 3.12905C13.9183 3.15177 13.9044 3.1724 13.887 3.18975L10.6125 6.46425C10.5254 6.55132 10.4564 6.65468 10.4092 6.76844C10.3621 6.88219 10.3379 7.00412 10.3379 7.12725C10.3379 7.25038 10.3621 7.37231 10.4092 7.48606C10.4564 7.59982 10.5254 7.70318 10.6125 7.79025C10.6996 7.87732 10.8029 7.94638 10.9167 7.9935C11.0304 8.04062 11.1524 8.06487 11.2755 8.06487C11.3986 8.06487 11.5206 8.04062 11.6343 7.9935C11.7481 7.94638 11.8514 7.87732 11.9385 7.79025L15.213 4.51425C15.2304 4.49679 15.2511 4.48294 15.2739 4.47348C15.2967 4.46403 15.3211 4.45917 15.3457 4.45917C15.3704 4.45917 15.3948 4.46403 15.4176 4.47348C15.4404 4.48294 15.4611 4.49679 15.4785 4.51425L17.1202 6.156C17.2252 6.2609 17.3589 6.33232 17.5044 6.36122C17.6499 6.39013 17.8008 6.37521 17.9378 6.31837C18.0749 6.26152 18.192 6.1653 18.2744 6.04188C18.3567 5.91845 18.4006 5.77338 18.4005 5.625V0.750001C18.4005 0.551088 18.3215 0.360322 18.1808 0.21967C18.0402 0.0790171 17.8494 4.43576e-07 17.6505 4.26186e-07Z" fill="#00798A"/>
+                        </g>
+                        </g>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_5951">
+                        <rect width="18" height="18" fill="white" transform="translate(0.400391)"/>
+                        </clipPath>
+                        <clipPath id="clip1_2_5951">
+                        <rect width="18" height="18" fill="white" transform="translate(0.400391)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="get-started">
+           <p>Create your own Meetup group</p>
+           <button class="btn">Get Started</button>
+     
+        </div>
+        <div class="menu">
+            <div class="menu-block">
+                <p>Your Account</p>
+                <a href="#">Sign Up</a>
+                <a href="#">Log in</a>
+                <a href="#">Help</a>
+                <a href="#">Become an Affiliale</a>
+            </div>
+            <div class="menu-block">
+             <p>Discover</p>
+             <a href="#">Groups</a>
+             <a href="#">Calendar</a>
+             <a href="#">Topics</a>
+             <a href="#">Cities</a>
+             <a href="#">Online Events</a>
+             <a href="#">Local Guides</a>
+             <a href="#">Make Friends</a>
+         </div>
+         <div class="menu-block">
+             <p>Meetup</p>
+             <a href="#">About</a>
+             <a href="#">Blog</a>
+             <a href="#">Meetup Pro</a>
+             <a href="#">Careers</a>
+             <a href="#">Apps</a>
+             <a href="#">Podcast</a>
+         </div>
+     
+        </div>
+        <div class="follow-us">
+             <div class="follow-us--right">
+               <p>Follow us</p>
+               <div class="social-icons">
+                 <div class="socials">
+                    <a href="#"></a>
+                    <img src="./image/follow us/fb.svg" alt="">
+     
+                 </div>
+                 <div class="socials">
+                    <a href="#"></a>
+                    <img src="./image/follow us/twit.svg" alt="">
+                 
+                 </div>
+                 <div class="socials">
+                    <a href="#"></a>
+                    <img src="./image/follow us/youtube.svg" alt="">
+                 
+                 </div>
+                 <div class="socials">
+                    <a href="#"></a>
+                    <img src="./image/follow us/insta.svg" alt="">
+                 
+                 </div>
+                 <div class="socials">
+                    <a href="#"></a>
+                    <img src="./image/follow us/tiktok.svg" alt="">
+                 
+                 </div>
+               </div>
+             </div>
+             <div class="follow-us--left">
+                 
+             </div>
+     
+        </div>
+        <div class="terms">
+         <p>@ 2024 Meetup</p>
+         <a href="#">Terms of Service</a>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Do not Sell or Share My Personal Data</a>
+         <a href="#">Cookie Policy</a>
+         <a href="#">Help</a>
+     
+        </div>
+     
+       </footer>
+
+    <a href="./index.html">переход на homepage</a>
+    <script type="module" src="./main.js"></script>
+    
+</body>
+</html>
